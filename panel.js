@@ -7,9 +7,12 @@ $(function(){
       // 画像を挿入するのに使う
       let number = parseInt($(this).text());
       let url = `img/keihin${number}.jpg`;
-      // let img =`<img src="img/dummy${number}.jpg" style="width:100%;height:100%;">`;
-      // $(this).prop('outerHTML', img);
-      $(this)
+      let target = this;
+      $('#fullImage')
+        .css('background-image', `url(${url})`)
+        .css('background-size', 'cover')
+        .css('background-repeat', 'no-repeat');
+      $(target)
         .css('color', 'rgba(33, 35, 84, 0.8)')
         .css('background-color', 'transparent')
         .css('background-image', `url(${url})`)

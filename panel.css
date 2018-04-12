@@ -1,8 +1,3 @@
-.number {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-}
 html, body { height: 100%; }
 .container {
   display: flex;
@@ -31,4 +26,20 @@ html, body { height: 100%; }
   align-items: center;
   justify-content: center;
 }
-
+#fullimage {
+  width: 60%;
+  height: 40%;
+  z-index: 2;
+  display: none;
+  position: fixed;
+}
+#overlay{
+  z-index: 1;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-color:rgba(0,0,0,0.75);
+}
