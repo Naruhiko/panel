@@ -1,24 +1,34 @@
-ul {
-  margin: 0 auto;
-  padding: 0 0;
-  width: 641px;
-}
-li {
-  display: inline-block;
-  list-style: none;
-  width: 200px;
-  height: 200px;
-  margin: 8px 5px;
-  background-color: #e9c5c7;
-}
 .number {
-  color: #212354;
-  font-size: 100px;
-  font-weight: bold;
   width: 100%;
   height: 100%;
   margin: auto;
+}
+html, body { height: 100%; }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.list {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: .5%;
+  width: 100%;
+  overflow: hidden;
+}
+.listItem {
+  float: left;
+  background-color: #e9c5c7;
+  width: 19%;
+  height: 300px; /* 高さを整える */
+  margin: .5%;
+  color: #212354;
+  font-size: 120px;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
