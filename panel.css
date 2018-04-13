@@ -25,21 +25,20 @@ html, body { height: 100%; }
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-transitional:all .5s ease-in-out;
+  -moz-transitional:all .5s ease-in-out;
+  -o-transitional:all .5s ease-in-out;
+  transition:all .5s ease-in-out;
+}
+.listItem:hover {
+  background-color: #fea82d;
 }
 #fullimage {
-  width: 60%;
-  height: 40%;
   z-index: 2;
-  display: none;
-  position: fixed;
-}
-#overlay{
-  z-index: 1;
   display: none;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 120%;
-  background-color:rgba(0,0,0,0.75);
+  right: 0;
+  bottom: 0;
 }
